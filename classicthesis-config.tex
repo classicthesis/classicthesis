@@ -1,12 +1,12 @@
 % ****************************************************************************************************
-% classicthesis-config.tex 
-% formerly known as loadpackages.sty, classicthesis-ldpkg.sty, and classicthesis-preamble.sty 
-% Use it at the beginning of your ClassicThesis.tex, or as a LaTeX Preamble 
+% classicthesis-config.tex
+% formerly known as loadpackages.sty, classicthesis-ldpkg.sty, and classicthesis-preamble.sty
+% Use it at the beginning of your ClassicThesis.tex, or as a LaTeX Preamble
 % in your ClassicThesis.{tex,lyx} with \input{classicthesis-config}
-% ****************************************************************************************************  
-% If you like the classicthesis, then I would appreciate a postcard. 
-% My address can be found in the file ClassicThesis.pdf. A collection 
-% of the postcards I received so far is available online at 
+% ****************************************************************************************************
+% If you like the classicthesis, then I would appreciate a postcard.
+% My address can be found in the file ClassicThesis.pdf. A collection
+% of the postcards I received so far is available online at
 % http://postcards.miede.de
 % ****************************************************************************************************
 
@@ -17,17 +17,19 @@
 % does not support utf8 use another editor!
 % ****************************************************************************************************
 \PassOptionsToPackage{utf8}{inputenc}
- \usepackage{inputenc}
+    \usepackage{inputenc}
 
 % ****************************************************************************************************
-% 1. Configure classicthesis for your needs here, e.g., remove "drafting" below 
+% 1. Configure classicthesis for your needs here, e.g., remove "drafting" below
 % in order to deactivate the time-stamp on the pages
 % ****************************************************************************************************
-\PassOptionsToPackage{eulerchapternumbers,listings,drafting,%
-				 pdfspacing,%floatperchapter,%linedheaders,%
-				 subfig,beramono,eulermath,parts}{classicthesis}										
+\PassOptionsToPackage{%
+    eulerchapternumbers,listings,drafting,%
+    pdfspacing,%floatperchapter,%linedheaders,%
+    subfig,beramono,eulermath,parts%
+}{classicthesis}
 % ********************************************************************
-% Available options for classicthesis.sty 
+% Available options for classicthesis.sty
 % (see ClassicThesis.pdf for more information):
 % drafting
 % parts nochapters linedheaders
@@ -38,7 +40,7 @@
 
 % ********************************************************************
 % Triggers for this config
-% ******************************************************************** 
+% ********************************************************************
 \usepackage{ifthen}
 \newboolean{enable-backrefs} % enable backrefs in the bibliography
 \setboolean{enable-backrefs}{false} % true false
@@ -71,39 +73,39 @@
 \newcommand{\ie}{i.\,e.}
 \newcommand{\Ie}{I.\,e.}
 \newcommand{\eg}{e.\,g.}
-\newcommand{\Eg}{E.\,g.} 
+\newcommand{\Eg}{E.\,g.}
 % ****************************************************************************************************
 
 
 % ****************************************************************************************************
 % 3. Loading some handy packages
 % ****************************************************************************************************
-% ******************************************************************** 
+% ********************************************************************
 % Packages with options that might require adjustments
-% ******************************************************************** 
-%\PassOptionsToPackage{ngerman,american}{babel}   % change this to your language(s), main language last
+% ********************************************************************
+%\PassOptionsToPackage{ngerman,american}{babel} % change this to your language(s), main language last
 % Spanish languages need extra options in order to work with this template
 %\PassOptionsToPackage{spanish,es-lcroman}{babel}
- \usepackage{babel}					
+    \usepackage{babel}
 
 \PassOptionsToPackage{square,numbers}{natbib}
- \usepackage{natbib}				
+    \usepackage{natbib}
 
-\PassOptionsToPackage{fleqn}{amsmath}		% math environments and more by the AMS 
- \usepackage{amsmath}
+\PassOptionsToPackage{fleqn}{amsmath} % math environments and more by the AMS
+    \usepackage{amsmath}
 
-% ******************************************************************** 
+% ********************************************************************
 % General useful packages
-% ******************************************************************** 
+% ********************************************************************
 \PassOptionsToPackage{T1}{fontenc} % T2A for cyrillics
-	\usepackage{fontenc}     
+    \usepackage{fontenc}
 \usepackage{textcomp} % fix warning with missing font shapes
 \usepackage{fixltx2e} % fixes some LaTeX issues: http://tug.org/texmf-dist/doc/latex/base/fixltx2e.pdf
-\usepackage{scrhack} % fix warnings when using KOMA with listings package          
-\usepackage{xspace} % to get the spacing after macros right  
+\usepackage{scrhack} % fix warnings when using KOMA with listings package
+\usepackage{xspace} % to get the spacing after macros right
 \usepackage{mparhack} % get marginpar right
 \PassOptionsToPackage{printonlyused,smaller}{acronym}
-	\usepackage{acronym} % nice macros for handling all acronyms in the thesis
+    \usepackage{acronym} % nice macros for handling all acronyms in the thesis
 %\renewcommand*{\acsfont}[1]{\textssc{#1}} % for MinionPro
 \renewcommand{\bflabel}[1]{{#1}\hfill} % fix the list of acronyms
 % ****************************************************************************************************
@@ -113,21 +115,22 @@
 % 4. Setup floats: tables, (sub)figures, and captions
 % ****************************************************************************************************
 \usepackage{tabularx} % better tables
-	\setlength{\extrarowheight}{3pt} % increase table row height
+    \setlength{\extrarowheight}{3pt} % increase table row height
 \newcommand{\tableheadline}[1]{\multicolumn{1}{c}{\spacedlowsmallcaps{#1}}}
 \newcommand{\myfloatalign}{\centering} % to be used with each float for alignment
 \usepackage{caption}
 \captionsetup{format=hang,font=small}
-\usepackage{subfig}  
+\usepackage{subfig}
 % ****************************************************************************************************
 
 
 % ****************************************************************************************************
 % 5. Setup code listings
 % ****************************************************************************************************
-\usepackage{listings} 
+\usepackage{listings}
 %\lstset{emph={trueIndex,root},emphstyle=\color{BlueViolet}}%\underbar} % for special keywords
-\lstset{language=[LaTeX]Tex,%C++,
+\lstset{%
+    language=[LaTeX]Tex,%C++,
     keywordstyle=\color{RoyalBlue},%\bfseries,
     basicstyle=\small\ttfamily,
     %identifierstyle=\color{NavyBlue},
@@ -143,8 +146,8 @@
     frame=single,
     belowcaptionskip=.75\baselineskip
     %frame=L
-} 
-% ****************************************************************************************************    		   
+}
+% ****************************************************************************************************
 
 
 % ****************************************************************************************************
@@ -154,11 +157,11 @@
 % Using PDFLaTeX
 % ********************************************************************
 \PassOptionsToPackage{pdftex,hyperfootnotes=false,pdfpagelabels}{hyperref}
-	\usepackage{hyperref}  % backref linktocpage pagebackref
+    \usepackage{hyperref} % backref linktocpage pagebackref
 \pdfcompresslevel=9
-\pdfadjustspacing=1 
+\pdfadjustspacing=1
 \PassOptionsToPackage{pdftex}{graphicx}
-	\usepackage{graphicx} 
+    \usepackage{graphicx}
 
 % ********************************************************************
 % Setup the style of the backrefs from the bibliography
@@ -169,29 +172,29 @@
 \newcommand{\backrefcitedmultistring}[1]{(Cited on pages~#1.)}
 \ifthenelse{\boolean{enable-backrefs}}%
 {%
-		\PassOptionsToPackage{hyperpageref}{backref}
-		\usepackage{backref} % to be loaded after hyperref package 
-		   \renewcommand{\backreftwosep}{ and~} % separate 2 pages
-		   \renewcommand{\backreflastsep}{, and~} % separate last of longer list
-		   \renewcommand*{\backref}[1]{}  % disable standard
-		   \renewcommand*{\backrefalt}[4]{% detailed backref
-		      \ifcase #1 %
-		         \backrefnotcitedstring%
-		      \or%
-		         \backrefcitedsinglestring{#2}%
-		      \else%
-		         \backrefcitedmultistring{#2}%
-		      \fi}%
-}{\relax}    
+    \PassOptionsToPackage{hyperpageref}{backref}
+    \usepackage{backref} % to be loaded after hyperref package
+    \renewcommand{\backreftwosep}{ and~} % separate 2 pages
+    \renewcommand{\backreflastsep}{, and~} % separate last of longer list
+    \renewcommand*{\backref}[1]{} % disable standard
+    \renewcommand*{\backrefalt}[4]{% detailed backref
+    \ifcase #1 %
+        \backrefnotcitedstring%
+    \or%
+        \backrefcitedsinglestring{#2}%
+    \else%
+        \backrefcitedmultistring{#2}%
+    \fi}%
+}{\relax}
 
 % ********************************************************************
 % Hyperreferences
 % ********************************************************************
 \hypersetup{%
-    %draft,	% = no hyperlinking at all (useful in b/w printouts)
+    %draft, % = no hyperlinking at all (useful in b/w printouts)
     colorlinks=true, linktocpage=true, pdfstartpage=3, pdfstartview=FitV,%
     % uncomment the following line if you want to have black links (e.g., for printing)
-    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=3, pdfstartview=FitV,% 
+    %colorlinks=false, linktocpage=false, pdfborder={0 0 0}, pdfstartpage=3, pdfstartview=FitV,%
     breaklinks=true, pdfpagemode=UseNone, pageanchor=true, pdfpagemode=UseOutlines,%
     plainpages=false, bookmarksnumbered, bookmarksopen=true, bookmarksopenlevel=1,%
     hypertexnames=true, pdfhighlight=/O,%nesting=true,%frenchlinks,%
@@ -203,7 +206,7 @@
     pdfkeywords={},%
     pdfcreator={pdfLaTeX},%
     pdfproducer={LaTeX with hyperref and classicthesis}%
-}   
+}
 
 % ********************************************************************
 % Setup autoreferences
@@ -211,34 +214,34 @@
 % There are some issues regarding autorefnames
 % http://www.ureader.de/msg/136221647.aspx
 % http://www.tex.ac.uk/cgi-bin/texfaq2html?label=latexwords
-% you have to redefine the makros for the 
+% you have to redefine the makros for the
 % language you use, e.g., american, ngerman
 % (as chosen when loading babel/AtBeginDocument)
 % ********************************************************************
 \makeatletter
 \@ifpackageloaded{babel}%
     {%
-       \addto\extrasamerican{%
-					\renewcommand*{\figureautorefname}{Figure}%
-					\renewcommand*{\tableautorefname}{Table}%
-					\renewcommand*{\partautorefname}{Part}%
-					\renewcommand*{\chapterautorefname}{Chapter}%
-					\renewcommand*{\sectionautorefname}{Section}%
-					\renewcommand*{\subsectionautorefname}{Section}%
-					\renewcommand*{\subsubsectionautorefname}{Section}% 	
-				}%
-       \addto\extrasngerman{% 
-					\renewcommand*{\paragraphautorefname}{Absatz}%
-					\renewcommand*{\subparagraphautorefname}{Unterabsatz}%
-					\renewcommand*{\footnoteautorefname}{Fu\"snote}%
-					\renewcommand*{\FancyVerbLineautorefname}{Zeile}%
-					\renewcommand*{\theoremautorefname}{Theorem}%
-					\renewcommand*{\appendixautorefname}{Anhang}%
-					\renewcommand*{\equationautorefname}{Gleichung}%        
-					\renewcommand*{\itemautorefname}{Punkt}%
-				}%	
-			% Fix to getting autorefs for subfigures right (thanks to Belinda Vogt for changing the definition)
-			\providecommand{\subfigureautorefname}{\figureautorefname}%  			
+        \addto\extrasamerican{%
+            \renewcommand*{\figureautorefname}{Figure}%
+            \renewcommand*{\tableautorefname}{Table}%
+            \renewcommand*{\partautorefname}{Part}%
+            \renewcommand*{\chapterautorefname}{Chapter}%
+            \renewcommand*{\sectionautorefname}{Section}%
+            \renewcommand*{\subsectionautorefname}{Section}%
+            \renewcommand*{\subsubsectionautorefname}{Section}%
+        }%
+        \addto\extrasngerman{%
+            \renewcommand*{\paragraphautorefname}{Absatz}%
+            \renewcommand*{\subparagraphautorefname}{Unterabsatz}%
+            \renewcommand*{\footnoteautorefname}{Fu\"snote}%
+            \renewcommand*{\FancyVerbLineautorefname}{Zeile}%
+            \renewcommand*{\theoremautorefname}{Theorem}%
+            \renewcommand*{\appendixautorefname}{Anhang}%
+            \renewcommand*{\equationautorefname}{Gleichung}%
+            \renewcommand*{\itemautorefname}{Punkt}%
+        }%
+        % Fix to getting autorefs for subfigures right (thanks to Belinda Vogt for changing the definition)
+        \providecommand{\subfigureautorefname}{\figureautorefname}%
     }{\relax}
 \makeatother
 
@@ -251,14 +254,14 @@
 % ********************************************************************
 \listfiles
 %\PassOptionsToPackage{l2tabu,orthodox,abort}{nag}
-%	\usepackage{nag}
+%    \usepackage{nag}
 %\PassOptionsToPackage{warning, all}{onlyamsmath}
-%	\usepackage{onlyamsmath}
+%    \usepackage{onlyamsmath}
 
 % ********************************************************************
 % Last, but not least...
 % ********************************************************************
-\usepackage{classicthesis} 
+\usepackage{classicthesis}
 % ****************************************************************************************************
 
 

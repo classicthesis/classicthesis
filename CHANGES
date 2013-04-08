@@ -1,18 +1,18 @@
 Changes in version 4.1 (August 2012)
 o Working towards XeLaTeX support:
-	- "ifxetex" package for checking whether
-	  XeTeX is in use (classicthesis.sty)
-	- Adjusted part, chapter, and tocEntry 
-	- Thanks to Joerg Weber for his ideas and code
-	- Option "pdfspacing" does not work for XeTeX
-	  and is disabled when XeTeX is running
-	  (maybe implement spacing with fontspec later)
+  - "ifxetex" package for checking whether
+    XeTeX is in use (classicthesis.sty)
+  - Adjusted part, chapter, and tocEntry 
+  - Thanks to Joerg Weber for his ideas and code
+  - Option "pdfspacing" does not work for XeTeX
+    and is disabled when XeTeX is running
+    (maybe implement spacing with fontspec later)
 o Load additional packages in order to 
   reduce warnings (classicthesis-config.tex)
-	- "textcomp" to fix warnings with missing font 
-	  shapes
-	- "scrhack" to fix warnings when using KOMA 
-	  with listings package  
+  - "textcomp" to fix warnings with missing font 
+    shapes
+  - "scrhack" to fix warnings when using KOMA 
+    with listings package  
 o Replaced \mathrm-command with \textrm-command
   (Chapter03.tex)
 
@@ -25,12 +25,12 @@ o No per-chapter-numbering also for equations
   (classicthesis.sty and Chapter03.tex)
 o classicthesis.sty now also works without the 
   KOMA-classes (scrbook, scrartcl, etc.):
-	- This affects the text body shape, where the
-	  package "typearea" is always loaded in order 
-	  to use \areaset
-	- And affects the layout of footnotes where the 
-	  package "footmisc" is loaded otherwise
-	  (not 100\% identical look-and-feel but OK)
+  - This affects the text body shape, where the
+    package "typearea" is always loaded in order 
+    to use \areaset
+  - And affects the layout of footnotes where the 
+    package "footmisc" is loaded otherwise
+    (not 100\% identical look-and-feel but OK)
 o Help for using spanish babel with classicthesis 
   (classicthesis-config.tex)
 o Note about pdfsync issues with graffiti 
@@ -49,33 +49,33 @@ o There have been some major changes in order to port
   Special thanks go to Ivo Pletikosi\'c for all his 
   hard work he put into this project!
 o Changes in ClassicThesis.tex:
-	- Redundant fleqn removed from documentclass options 
-	 (will be set by amsmath package in preamble)
-	- KOMA adjustments for documentclass: 
-	  fontsize=11pt,paper=14
-	- Moved language options into documentclass due to LyX
-	  issues with babel
+  - Redundant fleqn removed from documentclass options 
+   (will be set by amsmath package in preamble)
+  - KOMA adjustments for documentclass: 
+    fontsize=11pt,paper=14
+  - Moved language options into documentclass due to LyX
+    issues with babel
 o Changes in classicthesis.sty:
-	- Removed bcor from \areaset command so that it can
-	  be set via \documentclass option (BCOR=)
-	- New \ctparttext command for putting preamble text
-	  after part titles (see ClassicThesis.tex for examples)
-	- \graffito command now also available as original
-	  \marginpar (backward compatibility is enabled)
-	- Chapter number in margin done with \oldmarginpar
+  - Removed bcor from \areaset command so that it can
+    be set via \documentclass option (BCOR=)
+  - New \ctparttext command for putting preamble text
+    after part titles (see ClassicThesis.tex for examples)
+  - \graffito command now also available as original
+    \marginpar (backward compatibility is enabled)
+  - Chapter number in margin done with \oldmarginpar
 o Changes to classicthesis-preamble.sty:
   - Fixed autoref for subfigures (see Chapter 2 for example)
   - Fixed issues with redefining autoref strings (for
       different languages)
-	- Now contains all configuration information, such as
-	  the title, your name etc.
-	- This package now also loads classicthesis.sty, change
-	  the options classicthesis to be loaded with here  
-	- Package inputenc now loaded with latin9 option 
-	- Package listings now also loaded here
-	- Now safer package loading regarding options by
-	  using \PassOptionsToPackage command extensively
-	- Inserted new string for \mySubtitle
+  - Now contains all configuration information, such as
+    the title, your name etc.
+  - This package now also loads classicthesis.sty, change
+    the options classicthesis to be loaded with here  
+  - Package inputenc now loaded with latin9 option 
+  - Package listings now also loaded here
+  - Now safer package loading regarding options by
+    using \PassOptionsToPackage command extensively
+  - Inserted new string for \mySubtitle
 o Changes in Titlepage.tex and Titleback.tex because of new 
   string \mySubtitle
 o Changed a lot of the documentation, e.g., in Chapter01.tex
