@@ -1,0 +1,156 @@
+LIST OF FILES FOR ClassicThesis.tex
+
+ *File List*
+scrreprt.cls    2012/07/29 v3.11b KOMA-Script document class (report)
+scrkbase.sty    2012/07/29 v3.11b KOMA-Script package (KOMA-Script-dependent ba
+sics and keyval usage)
+ scrbase.sty    2012/07/29 v3.11b KOMA-Script package (KOMA-Script-independent 
+basics and keyval usage)
+  keyval.sty    1999/03/16 v1.13 key=value parser (DPC)
+scrlfile.sty    2012/06/15 v3.12 KOMA-Script package (loading files)
+tocbasic.sty    2012/04/04 v3.10b KOMA-Script package (handling toc-files)
+scrsize11pt.clo    2012/07/29 v3.11b KOMA-Script font size class option (11pt)
+typearea.sty    2012/07/29 v3.11b KOMA-Script package (type area)
+classicthesis-config.tex
+  ifthen.sty    2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+inputenc.sty    2008/03/30 v1.1d Input encoding file
+  latin9.def    2008/03/30 v1.1d Input encoding file
+   babel.sty    2008/07/08 v3.8m The Babel package
+ bblopts.cfg    2006/07/31 v1.0 MiKTeX 'babel' configuration
+ngermanb.ldf    2008/07/06 v2.6n new German support from the babel system
+ english.ldf    2005/03/30 v3.3o English support from the babel system
+  natbib.sty    2010/09/13 8.31b (PWD, AO)
+ amsmath.sty    2000/07/18 v2.13 AMS math features
+ amstext.sty    2000/06/29 v2.01
+  amsgen.sty    1999/11/30 v2.0
+  amsbsy.sty    1999/11/29 v1.2d
+  amsopn.sty    1999/12/14 v2.01 operator names
+ fontenc.sty
+   t1enc.def    2005/09/27 v1.99g Standard LaTeX file
+textcomp.sty    2005/09/27 v1.99g Standard LaTeX package
+  ts1enc.def    2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+ scrhack.sty    2012/07/29 v3.11b KOMA-Script package (hacking other packages)
+  xspace.sty    2009/10/20 v1.13 Space after command names (DPC,MH)
+mparhack.sty    2005/04/17 v1.4 (T. Sgouros and S. Ulrich)
+fixltx2e.sty    2006/09/13 v1.1m fixes to LaTeX
+ acronym.sty    2010/09/08 v1.36 Support for acronyms (Tobias Oetiker)
+  suffix.sty    2006/07/15 1.5 Variant command support
+ relsize.sty    2003/07/04 ver 3.1
+tabularx.sty    1999/01/07 v2.07 `tabularx' package (DPC)
+   array.sty    2008/09/09 v2.4c Tabular extension package (FMi)
+ caption.sty    2012/02/19 v3.2f Customizing captions (AR)
+caption3.sty    2012/01/12 v1.4b caption3 kernel (AR)
+  subfig.sty    2005/06/28 ver: 1.3 subfig package
+listings.sty    2007/02/22 1.4 (Carsten Heinz)
+ lstmisc.sty    2007/02/22 1.4 (Carsten Heinz)
+listings.cfg    2007/02/22 1.4 listings configuration
+listings.hak    2012/07/29 v3.11b KOMA-Script hacking package listings
+lstlang1.sty    2004/09/05 1.3 listings language file
+lstlang2.sty    2004/09/05 1.3 listings language file
+lstlang3.sty    2004/09/05 1.3 listings language file
+lstlang1.sty    2004/09/05 1.3 listings language file
+lstlang2.sty    2004/09/05 1.3 listings language file
+lstlang3.sty    2004/09/05 1.3 listings language file
+lstlang1.sty    2004/09/05 1.3 listings language file
+lstlang2.sty    2004/09/05 1.3 listings language file
+lstlang3.sty    2004/09/05 1.3 listings language file
+ lstmisc.sty    2007/02/22 1.4 (Carsten Heinz)
+hyperref.sty    2012/08/03 v6.82y Hypertext links for LaTeX
+hobsub-hyperref.sty    2012/04/25 v1.12 Bundle oberdiek, subset hyperref (HO)
+hobsub-generic.sty    2012/04/25 v1.12 Bundle oberdiek, subset generic (HO)
+  hobsub.sty    2012/04/25 v1.12 Construct package bundles (HO)
+infwarerr.sty    2010/04/08 v1.3 Providing info/warning/error messages (HO)
+ ltxcmds.sty    2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+ifluatex.sty    2010/03/01 v1.3 Provides the ifluatex switch (HO)
+  ifvtex.sty    2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+ intcalc.sty    2007/09/27 v1.1 Expandable calculations with integers (HO)
+   ifpdf.sty    2011/01/30 v2.3 Provides the ifpdf switch (HO)
+etexcmds.sty    2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
+kvsetkeys.sty    2012/04/25 v1.16 Key value parser (HO)
+kvdefinekeys.sty    2011/04/07 v1.3 Define keys (HO)
+pdftexcmds.sty    2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO)
+pdfescape.sty    2011/11/25 v1.13 Implements pdfTeX's escape features (HO)
+bigintcalc.sty    2012/04/08 v1.3 Expandable calculations on big integers (HO)
+  bitset.sty    2011/01/30 v1.1 Handle bit-vector datatype (HO)
+uniquecounter.sty    2011/01/30 v1.2 Provide unlimited unique counter (HO)
+letltxmacro.sty    2010/09/02 v1.4 Let assignment for LaTeX macros (HO)
+ hopatch.sty    2011/06/24 v1.1 Wrapper for package hooks (HO)
+xcolor-patch.sty    2011/01/30 xcolor patch
+atveryend.sty    2011/06/30 v1.8 Hooks at the very end of document (HO)
+atbegshi.sty    2011/10/05 v1.16 At begin shipout hook (HO)
+refcount.sty    2011/10/16 v3.4 Data extraction from label references (HO)
+ hycolor.sty    2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
+ ifxetex.sty    2010/09/12 v0.6 Provides ifxetex conditional
+ auxhook.sty    2011/03/04 v1.3 Hooks for auxiliary files (HO)
+kvoptions.sty    2011/06/30 v3.11 Key value format for package options (HO)
+  pd1enc.def    2012/08/03 v6.82y Hyperref: PDFDocEncoding definition (HO)
+hyperref.cfg    2002/06/06 v1.2 hyperref configuration of TeXLive
+     url.sty    2006/04/12  ver 3.3  Verb mode for urls, etc.
+ hpdftex.def    2012/08/03 v6.82y Hyperref driver for pdfTeX
+rerunfilecheck.sty    2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
+graphicx.sty    1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+graphics.sty    2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+    trig.sty    1999/03/16 v1.09 sin cos tan (DPC)
+graphics.cfg    2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
+  pdftex.def    2011/05/27 v0.06d Graphics/color for pdfTeX
+classicthesis.sty    2012/08/12 v4.1 Typographic style for a classic-looking th
+esis
+  xcolor.sty    2007/01/21 v2.11 LaTeX color extensions (UK)
+   color.cfg    2007/01/18 v1.5 color configuration of teTeX/TeXLive
+dvipsnam.def    1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+mathpazo.sty    2005/04/12 PSNFSS-v9.2a Palatino w/ Pazo Math (D.Puga, WaS) 
+beramono.sty    2004/01/31 (WaS)
+ eulervm.sty    2005/01/11 v4.0 (WaS)
+microtype.sty    2010/01/10 v2.4 Micro-typography with pdfTeX (RS)
+microtype.cfg    2010/01/10 v2.4 microtype main configuration file (RS)
+booktabs.sty    2005/04/14 v1.61803 publication quality tables
+textcase.sty    2004/10/07 v0.07 Text only upper/lower case changing (DPC)
+scrpage2.sty    2010/04/22 v2.5 LaTeX2e KOMA-Script package
+titlesec.sty    2011/12/15 v2.10.0 Sectioning titles
+ tocloft.sty    2010/10/13 v2.3e parameterised ToC, etc., typesetting
+ scrtime.sty    2012/07/29 v3.11b KOMA-Script package (time of LaTeX run)
+prelim2e.sty    2009/05/29 v1.3 prelim2e Package (MS)
+everyshi.sty    2001/05/15 v3.00 EveryShipout Package (MS)
+remreset.sty    
+  ts1cmr.fd    1999/05/25 v2.5h Standard LaTeX font definitions
+  t1pplj.fd    2004/09/06 font definitions for T1/pplj.
+ nameref.sty    2012/07/31 v2.42 Cross-referencing by name of section
+gettitlestring.sty    2010/12/03 v1.4 Cleanup title references (HO)
+ClassicThesis.out
+ClassicThesis.out
+supp-pdf.mkii
+  mt-ppl.cfg    2005/11/16 v1.6 microtype config. file: Palatino (RS)
+FrontBackmatter/DirtyTitlepage.tex
+   t1fvm.fd    2004/09/07 scalable font definitions for T1/fvm.
+FrontBackmatter/Titlepage.tex
+gfx/TFZsuperellipse_bw.pdf
+FrontBackmatter/Titleback.tex
+ ts1pplj.fd    2004/09/06 font definitions for TS1/pplj.
+FrontBackmatter/Dedication.tex
+FrontBackmatter/Abstract.tex
+FrontBackmatter/Publication.tex
+FrontBackmatter/Acknowledgments.tex
+   uzeur.fd    2005/01/11 v4.0 (WaS)
+  mt-eur.cfg    2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+   uzeus.fd    2005/01/11 v4.0 (WaS)
+  mt-eus.cfg    2006/07/28 v1.2 microtype config. file: AMS Euler Script (RS)
+  uzeuex.fd    2005/01/11 v4.0 (WaS)
+ ot1zplm.fd    2002/09/08 Fontinst v1.914 font definitions for OT1/zplm.
+FrontBackmatter/Contents.tex
+  t1cmss.fd    1999/05/25 v2.5h Standard LaTeX font definitions
+Chapters/Chapter01.tex
+Examples/classicthesis-article.tex
+Examples/classicthesis-book.tex
+Examples/classicthesis-cv.tex
+Chapters/Chapter02.tex
+gfx/example_1.jpg
+gfx/example_2.jpg
+gfx/example_3.jpg
+gfx/example_4.jpg
+Chapters/Chapter03.tex
+Chapters/Chapter0A.tex
+FrontBackmatter/Bibliography.tex
+ClassicThesis.bbl
+FrontBackmatter/Colophon.tex
+FrontBackmatter/Declaration.tex
+ ***********

@@ -1,0 +1,72 @@
+% book example for classicthesis.sty
+\documentclass[11pt,a5paper,footinclude=true,headinclude=true]{scrbook} % KOMA-Script book
+\usepackage[T1]{fontenc}                
+\usepackage{lipsum}
+\usepackage[linedheaders,parts,pdfspacing]{../classicthesis} % ,manychapters
+%\usepackage[osf]{libertine}
+\usepackage{amsthm}
+
+
+\begin{document}
+%	\pagestyle{scrheadings}
+%	\manualmark
+%	\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+	
+	\tableofcontents 
+
+%	\automark[section]{chapter}
+%	\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+%	\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+
+    % use \cleardoublepage here to avoid problems with pdfbookmark
+    \cleardoublepage\part{Test Part}
+    \chapter{Some Math Testing}
+		\newtheoremstyle{note}% hnamei 
+		{3pt}% hSpace abovei 
+		{3pt}% hSpace belowi note
+		{}% hBody fonti 
+		{}% hIndent amounti1
+		{\itshape}% hTheorem head fonti 
+%		{\spacedlowsmallcaps}%
+		{:}% hPunctuation after theorem headi 
+		{.5em}% hSpace after theorem headi2
+		{}%
+		\theoremstyle{note}
+    \newtheorem{note}{Definition}
+		\begin{note}
+		Here is a new definition
+		\end{note}
+
+    
+		\begin{proof}
+		Here is my proof:
+		\[
+		a^2 + b^2 = c^2 \qedhere
+		\]
+		\end{proof}    
+    
+    
+    
+    \chapter{Test Chapter}
+    \lipsum[1]
+
+    \section{A Section}
+    \lipsum[1]
+    
+    \chapter{Test Chapter}
+    \lipsum[1]
+    
+    \section{A Section}
+    \lipsum[1]
+
+%	\include{multiToC}
+
+    \appendix
+    \cleardoublepage\part{Appendix}
+    \chapter{Appendix Chapter}
+    \lipsum[1]
+    
+    \section{A Section}
+    \lipsum[1]
+
+\end{document}

@@ -1,0 +1,45 @@
+% book example for classicthesis.sty
+\documentclass[11pt,a5paper,footinclude=true,headinclude=true]{scrbook} % KOMA-Script book
+\usepackage[T1]{fontenc}                
+\usepackage{lipsum}
+%\usepackage{hyperref}
+\usepackage[parts]{../classicthesis} % ,manychapters
+%\usepackage[osf]{libertine}
+%\hypersetup{linktocpage=true,bookmarksnumbered=true,pageanchor=true,hypertexnames=false,naturalnames=true,plainpages=false}
+
+\begin{document}
+%	\pagestyle{scrheadings}
+%	\manualmark
+%	\markboth{\spacedlowsmallcaps{\contentsname}}{\spacedlowsmallcaps{\contentsname}}
+	
+	\tableofcontents 
+
+%	\automark[section]{chapter}
+%	\renewcommand{\chaptermark}[1]{\markboth{\spacedlowsmallcaps{#1}}{\spacedlowsmallcaps{#1}}}
+%	\renewcommand{\sectionmark}[1]{\markright{\thesection\enspace\spacedlowsmallcaps{#1}}}
+
+    % use \cleardoublepage here to avoid problems with pdfbookmark
+    \cleardoublepage\part{Test Part}
+    \chapter{Test Chapter}
+    \lipsum[1]
+    
+    \section{A Section}
+    \lipsum[1]
+    
+    \chapter{Test Chapter}
+    \lipsum[1]
+    
+    \section{A Section}
+    \lipsum[1]
+
+%	\include{multiToC}
+
+    \appendix
+    \cleardoublepage\part{Appendix}
+    \chapter{Appendix Chapter}
+    \lipsum[1]
+    
+    \section{A Section}
+    \lipsum[1]
+
+\end{document}

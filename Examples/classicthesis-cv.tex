@@ -1,0 +1,35 @@
+% cv example for classicthesis.sty
+\documentclass[10pt,a4paper]{scrartcl}
+\usepackage[LabelsAligned]{currvita} % nice cv style
+\usepackage{url}
+\usepackage[ngerman]{babel}
+\usepackage[nochapters]{../classicthesis}
+% Some font experiments
+%\usepackage[osf]{libertine}
+%\usepackage{hfoldsty}
+%\usepackage[math]{iwona} %[light,condensed,math]
+%\renewcommand{\sfdefault}{iwona}
+%\usepackage{lmodern} % <-- no osf support :-(
+%\usepackage[urw-garamond]{mathdesign} %<-- no osf support :-(
+
+\renewcommand*{\cvheadingfont}{\LARGE\color{Maroon}}
+\renewcommand*{\cvlistheadingfont}{\large}
+\renewcommand*{\cvlabelfont}{\qquad}
+
+\begin{document}
+    \begin{cv}{\spacedallcaps{Curriculum Vit\ae}}
+        %\pdfbookmark[1]{Pers\"onliche Daten}{PersDat}
+        \begin{cvlist}{\spacedlowsmallcaps{Pers\"onliche Daten}}\label{PersDat}  
+            \item   Dr.-Ing.~Andr\'e Miede
+            \item   Geboren am \dots\ \texttt{(-;} \\	
+                    Europ\"aer, Deutsche Staatsb\"urgerschaft 
+            \item   \url{http://www.miede.de} \\				
+                    \url{https://www.xing.com/profile/Andre_Miede}				
+        \end{cvlist}
+        
+        %\pdfbookmark[1]{Irgendwas}{irgendwas}
+        \begin{cvlist}{\spacedlowsmallcaps{Irgendwas}}\label{irgendwas}
+            \item   \dots 
+        \end{cvlist}
+    \end{cv}
+\end{document}

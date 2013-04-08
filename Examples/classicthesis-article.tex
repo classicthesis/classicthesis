@@ -1,0 +1,35 @@
+% article example for classicthesis.sty
+\documentclass[10pt,a4paper]{article} % KOMA-Script article scrartcl
+\usepackage{lipsum}
+\usepackage{url}
+\usepackage[nochapters]{../classicthesis} % nochapters
+
+\begin{document}
+    \title{\rmfamily\normalfont\spacedallcaps{the title}}
+    \author{\spacedlowsmallcaps{tyler durden}}
+    \date{} % no date
+    
+    \maketitle
+    
+    \begin{abstract}
+        \noindent\lipsum[1] Just a test.\footnote{This is a footnote.}
+    \end{abstract}
+       
+    \tableofcontents
+    
+    \section{A Section}
+    \finalVersionString \lipsum[1]
+    \subsection{A Subsection}
+    \lipsum[1]
+    \subsection{A Subsection}
+    
+    \section{A Section}
+    \lipsum[1]
+    
+    % bib stuff
+    \nocite{*}
+    \addtocontents{toc}{\protect\vspace{\beforebibskip}}
+    \addcontentsline{toc}{section}{\refname}    
+    \bibliographystyle{plain}
+    \bibliography{../Bibliography}
+\end{document}
