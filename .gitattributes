@@ -1,8 +1,2 @@
 # Set default behaviour, in case users don't have core.autocrlf set.
 * text=auto
-
-# hack for crlf files:
-Bibliography.bib binary
-ClassicThesis.tcp binary
-ClassicThesis.tps binary
-
