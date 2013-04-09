@@ -4,11 +4,11 @@ An Homage to The Elements of Typographic Style
 
 (C) 2013 André Miede http://www.miede.de
 
-Please see the file [ClassicThesis.pdf](ClassicThesis.pdf) for more information.
+Please see the file [ClassicThesis.pdf](ClassicThesis.pdf?raw=true) for more information.
 Your comments are highly appreciated.
 
 If you like the style then I would appreciate a postcard. My address
-can be found in the file [ClassicThesis.pdf](ClassicThesis.pdf). A collection of the
+can be found in the file [ClassicThesis.pdf](ClassicThesis.pdf?raw=true). A collection of the
 postcards I received so far is available online at
 http://postcards.miede.de
 
