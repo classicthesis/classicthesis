@@ -1,16 +1,19 @@
 A Classic Thesis Style
+======================
 An Homage to The Elements of Typographic Style
-Copyright (C) 2012 André Miede http://www.miede.de
 
-Please see the file ClassicThesis.pdf for more information.
+(C) 2013 André Miede http://www.miede.de
+
+Please see the file [ClassicThesis.pdf](ClassicThesis.pdf) for more information.
 Your comments are highly appreciated.
 
 If you like the style then I would appreciate a postcard. My address
-can be found in the file ClassicThesis.pdf. A collection of the
+can be found in the file [ClassicThesis.pdf](ClassicThesis.pdf). A collection of the
 postcards I received so far is available online at
 http://postcards.miede.de
 
 License:
+--------
 This program is free software; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
 the Free Software Foundation; either version 2 of the License, or
