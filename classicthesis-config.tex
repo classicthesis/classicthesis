@@ -88,8 +88,18 @@
 %\PassOptionsToPackage{spanish,es-lcroman}{babel}
     \usepackage{babel}
 
-\PassOptionsToPackage{square,numbers}{natbib}
-    \usepackage{natbib}
+\usepackage{csquotes}
+\PassOptionsToPackage{%
+    backend=biber, %i nstead of bibtex
+    style=authoryear-comp, % Author 1999, 2010
+    bibstyle=authoryear,dashed=false, % dashed: substitute rep. author with ---
+    sorting=nyt, % name, year, title
+    maxbibnames=5, % default: 3, et al.
+    backref=true,
+    natbib=true % natbib compatibility mode (\citep and \citet still work)
+    }{biblatex}
+    \usepackage{biblatex}
+\addbibresource{Bibliography.bib}
 
 \PassOptionsToPackage{fleqn}{amsmath} % math environments and more by the AMS
     \usepackage{amsmath}
