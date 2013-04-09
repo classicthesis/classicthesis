@@ -12,6 +12,12 @@ can be found in the file [ClassicThesis.pdf](ClassicThesis.pdf). A collection of
 postcards I received so far is available online at
 http://postcards.miede.de
 
+Updates in this fork:
+---------------------
+- Use UTF-8 encoding
+- Whitespace cleanups (indentation and line endings were messed up)
+- minor fixes wrt. http://tug.org/texmf-dist/doc/latex/base/fixltx2e.pdf
+
 License:
 --------
 This program is free software; you can redistribute it and/or modify
